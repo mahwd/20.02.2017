@@ -1,0 +1,159 @@
+html, body {
+  margin:0px;
+  padding:0px;
+}
+                                    /*main-divs*/
+.wrapper {
+  width: 70%;
+  height: 100%;
+  margin: 0 auto;
+}
+
+.row {
+  width: 100%;
+  height: 400px;
+  display: inline-block;
+  position:relative;
+}
+.row>div{
+  width: 32%;
+  height: 100%;
+  border: 1px solid #aaa;
+  position: relative;
+  display: inline-block;
+  box-sizing: border-box;
+}
+.dateTime{
+  background: #2F9FAA;
+  width: 60px;
+  height: 70px;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.socialButtons span{
+margin-bottom: 0;
+}
+
+
+                                /*minor-changes*/
+
+                        /*margin between images*/
+.row>div:first-child {
+  margin-right: 1.57%;
+}
+.row>div:last-child {
+  margin-left: 1.58%;
+}
+                        /*image properties*/
+.row>div img{
+  width: 100%;
+  height: 60%;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  background-image: url(../img/ubuntu.jpg);
+  background-position: center;
+}
+
+
+.row span,h1,.socialButtons .dateTime {
+  position:absolute;
+}
+
+                          /*Head text*/
+.row h1 {
+  position: absolute;
+  top: 60%;
+  left: 10%;
+}
+
+                        /*social media icons*/
+.row div .socialButtons span {
+  width: 33.3%;
+  height: 40px;
+  position: absolute;
+  left: 0px;
+  bottom: 0px;
+
+  color: #6F6A85;
+  box-sizing: border-box;
+  line-height: 38px;
+  border: 0 solid #ddd;
+  border-top-width: 1px;
+  border-bottom-width: 1px;
+  border-right-width: 1px;
+  background-color: #f2f2f2;
+  text-align: center;
+}
+                  /*social media hovers*/
+.row div .socialButtons span:first-child:hover {
+  border-color: #006700;
+  background: #008d1b;
+  color: #fff;
+}
+.row div .socialButtons span:nth-child(2):hover {
+background: #DC0000;
+border-color: #db1c08;
+color: #fff;
+}
+.row div .socialButtons span:last-child:hover {
+background-color: #510dab;
+border-color: #510dab;
+color: #fff;
+}
+
+                    /*date and time positioning*/
+.row div .dateTime span:first-child {
+position: absolute;
+left: 0;
+top: 0;
+}
+.row div .dateTime span:last-child {
+position: absolute;
+left: 0;
+top: 40px;
+}
+
+                    /*social media buttons positioning*/
+.row div .socialButtons span:first-child {
+  position: absolute;
+  left: 0px;
+  bottom: 0px;
+}
+.row div .socialButtons span:nth-child(2) {
+  position: absolute;
+  left: 33.3%;
+  bottom: 0px;
+}
+.row div .socialButtons span:last-child {
+  position: absolute;
+  left: 66.6%;
+  bottom: 0px;
+}
+                  /*date*/
+.dateTime span:first-child{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  color: #fff;
+  text-align: center;
+  box-sizing: border-box;
+  padding-top:15%;
+
+}
+                    /*Time*/
+.dateTime span:last-child{
+  position: absolute;
+  left:0;
+  bottom:0;
+  width: 100%;
+  height: 30px;
+  color: #fff;
+  background: #3E4D68;
+  text-align: center;
+  box-sizing: border-box;
+  padding-top:8%;
+}
